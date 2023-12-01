@@ -1,0 +1,14 @@
+---
+- hosts: test
+  gather_facts: yes
+  tasks:
+  - name: Create user
+    tags: user
+    user:
+      name: simone
+      password: $y$j9T$80oTZcqQgUD./2K3tw3VE0$mS7t/AS2OikBo3MopyLmXcJa1WFWfJCzEmvMT24tZg4 #testpass
+      comment: Simone User
+      append: true
+      groups: sudo
+      state: present
+      update_password: on_create

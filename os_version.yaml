@@ -1,11 +1,15 @@
 ---
-- hosts: all
+- hosts: test
   gather_facts: yes
   tasks:
-  - name: Distribution version
+  - name: Distribution version - Debian
     when: ansible_os_family == 'Debian'
     debug: 
       msg: "{{ ansible_distribution }} {{ ansible_distribution_major_version }}.{{ ansible_distribution_minor_version }}"
+  - name: Distribution version - RedHat
+    when: ansible_os_family == 'RedHat'
+    debug:
+      msg: "{{ ansible_distribution }} {{ ansible_distribution_major_version }}"
   - name: Kernel version
     debug: 
       msg: "Kernel: {{ ansible_kernel }}"

@@ -1,23 +1,26 @@
 ---
-- hosts: all
+- hosts: test
 
   tasks:
-    - name: Update Repository Cache on Debian Servers
-      when: ansible_os_family == 'Debian'
-      apt:
-        force_apt_get: yes
-        update_cache: yes
-
     - name: Update Packages on Debian Servers
       when: ansible_os_family == 'Debian'
       apt:
         force_apt_get: yes
+        update_cache: yes
         upgrade: dist
+        autoremove: yes
 
     - name: Update Cleanup on Debian Servers
       when: ansible_os_family == 'Debian'
       apt:
         force_apt_get: yes
-        autoremove: yes
-        autoclean: yes
         clean: yes
+
+    - name: Update Packages on Red Hat Servers
+      when: ansible_os_family == 'RedHat'
+      dnf:
+        name: "*"
+        state: latest
+
+    - name: Reboot Servers
+      reboot:

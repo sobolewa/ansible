@@ -1,0 +1,99 @@
+truvant:
+  hosts:
+    eupolodadm01: #Ansible
+    eupolodadm10: #Rsyslog, Munin
+    eupolodadm13: #LibreNMS
+    eupolodadm14: #Wazuch
+    eupolodadm17: #NetBox
+    eupolodadm18: #GrayLog
+    eupolodaps22: #PIST/JPK Test
+    eupolodaps23: #PIST/JPK Live
+    eupolodaps26: #AMR: Toyota SSC12
+    eupolodaps29: #AMR: Toyota SSC3
+    eupolodaps30: #Docker: Truvant apps Test
+    eupolodaps31: #Docker: Truvant apps Live
+    eupolodaps32: #AMR: Milus SSC12
+    eupolodaps33: #AMR: Octant LPC
+    eupolodaps34: #PIST/JPK Test
+    eupolodaps35: #PIST/JPK Live
+    eupolodmta01: #SMTP, NTP
+    eupolodbkp04: #QAD backup
+    eupolodsps02: #Supplier Portal LPC
+    eupolodsps04: #Supplier Portal SSC3
+    eupolodsps05: #Supplier Portal SSC12
+    eupolodsps06: #Supplier Portal WPC
+    eupolodsps07: #Supplier Portal Test
+    eupolodadm11: #Zabbix Main  Server
+    eupolodadm16: #Zabbix Proxy Server 
+    eupostradm55: #Zabbix Proxy Server
+    eupowroadm04: #Zabbix Proxy Server
+    nauspdczbx01: #Zabbix Main  Server
+    nausspczbx02: #Zabbix Proxy Server
+    nausdfwzbx02: #Zabbix Proxy Server
+    nausboszbx01: #Zabbix Proxy Server
+
+monitor:
+  hosts:
+    eupolodadm10: #Rsyslog, Munin
+    eupolodadm13: #LibreNMS
+    eupolodadm14: #Wazuch
+    eupolodadm18: #GrayLog
+    eupolodadm11: #Zabbix Main  Server
+    eupolodadm16: #Zabbix Proxy Server
+    eupostradm55: #Zabbix Proxy Server
+    eupowroadm04: #Zabbix Proxy Server
+    nauspdczbx01: #Zabbix Main  Server
+    nausspczbx02: #Zabbix Proxy Server
+    nausdfwzbx02: #Zabbix Proxy Server
+    nausboszbx01: #Zabbix Proxy Server
+
+management:
+  hosts:
+    eupolodadm01: #Ansible
+    eupolodadm17: #NetBox
+    eupolodmta01: #SMTP, NTP
+    eupolodbkp04: #QAD backup
+
+zabbix:
+  hosts:
+    eupolodadm11: #Zabbix Main  Server
+    eupolodadm16: #Zabbix Proxy Server
+    eupostradm55: #Zabbix Proxy Server
+    eupowroadm04: #Zabbix Proxy Server
+    nauspdczbx01: #Zabbix Main  Server
+    nausspczbx02: #Zabbix Proxy Server
+    nausdfwzbx02: #Zabbix Proxy Server
+    nausboszbx01: #Zabbix Proxy Server
+
+supplier_portal:
+  hosts:
+    eupolodsps02: #Supplier Portal LPC
+    eupolodsps04: #Supplier Portal SSC3
+    eupolodsps05: #Supplier Portal SSC12
+    eupolodsps06: #Supplier Portal WPC
+    eupolodsps07: #Supplier Portal Test
+
+pist:
+  hosts:
+    eupolodaps22: #PIST/JPK Test
+    eupolodaps23: #PIST/JPK Live
+
+docker:
+  hosts:
+    eupolodaps30: #Docker: Truvant apps Test
+    eupolodaps31: #Docker: Truvant apps Live
+
+amr:
+  hosts:
+    eupolodaps26: #AMR: Toyota SSC12
+    eupolodaps29: #AMR: Toyota SSC3
+    eupolodaps32: #AMR: Milus SSC12
+    eupolodaps33: #AMR: Octant LPC
+     
+test:
+  hosts:
+    eupolodaps33: #AMR: Octant LPC
+
+live:
+  hosts:
+
